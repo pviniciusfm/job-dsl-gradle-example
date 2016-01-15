@@ -28,3 +28,9 @@ job("$basePath/grails-example-deploy") {
         shell 'scp war file; restart...'
     }
 }
+
+job('joao-feijao'){
+    steps{
+        shell 'echo meu primeiro build gerado automaticamente numero $BUILD_NUMBER'
+    }
+}
